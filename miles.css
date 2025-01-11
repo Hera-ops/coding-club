@@ -12,8 +12,8 @@ body {
     background: 
     radial-gradient(circle, rgba(0, 0, 0, 0.1) 10%, transparent 11%) 0 0, 
     radial-gradient(circle, rgba(0, 0, 0, 0.1) 10%, transparent 11%) 20px 20px, 
-    radial-gradient(circle, rgba(0, 0, 0, 0.1) 10%, transparent 11%) 40px 40px; /* Adjust to create smaller circles */
-background-size: 20px 20px; /* Controls the size of the circles and the space between them */
+    radial-gradient(circle, rgba(0, 0, 0, 0.1) 10%, transparent 11%) 40px 40px; /* adjust to cre8 smaller circles */
+background-size: 20px 20px; /* controls the size of the circles & the space between them */
 }
 
 
@@ -48,7 +48,7 @@ body::after {
     position: relative;
     z-index: 4; 
     text-align: center;
-    gap: 10px;
+    /*gap: 10px;*/
 }
 
 
@@ -57,16 +57,22 @@ body::after {
     font-family: "DotGothic16", serif;
     font-weight: 100;
     font-style: normal;
-    font-size: 60px
+    font-size: 70px;
+    margin-bottom: 0;
+    margin-left: 40px;
 }
 
 .main-subtitle {
     color: rgba(209, 211, 214, 0.8);
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 10px;
 }
 
 .searchbox {
-    margin-top: 0;
+     margin-bottom: 10px;
 }
 
 .search-box {
@@ -74,5 +80,13 @@ body::after {
     height: 25px;
     padding: 10px;
     background-color: yellow;
+    border: none;
     text-align: center;
+    font-size: 26px;
+}
+
+.search_button {
+    background-color: transparent;
+    border: none;
+    color: white;
 }
